@@ -33,7 +33,7 @@ public class Login {
 
     @Test(dataProvider = "loginUserInfo",dataProviderClass = LoginProvider.class)
     public void get_user_params(OrgLoginUser orgLoginUser) {
-
+        System.out.println("222222");
         String url = qaUrl+"loginByUsername";
         String pValue = String.valueOf(EnumP.WEB.getP());
         String platform = String.valueOf(PlatformType.BSAAS.getPlatformType());
