@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="bsaas_org">
+    <!--qa服地址-->
+    <parameter name="qa" value="http://10.4.7.112:10019/"/>
+    <test name="user">
+        <classes>
+            <class name="com.kzkt.bssas.test.Login"/>
+            <class name="com.kzkt.bssas.common.LoginProvider"/>
+<!--            <class name="com.kzkt.bssas.test.TestStudent"/>-->
+        </classes>
+
+    </test>
+</suite>
